@@ -1,2 +1,2 @@
 # Messaging-App-Cattagram
-Telegram knockoff centered around cats
+Telegram knockoff centered around cats.
