@@ -6,6 +6,7 @@ import {
 } from 'react-router-dom';
 import Dashboard from './pages/Dashboard'
 import Profile from './pages/Profile'
+import Messages from './pages/Messages';
 import './App.css'
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <>
         <Route path='/' element={<Dashboard />}/>
         <Route path='/profile' element={<Profile />} />
+        <Route path='/messages' element={<Messages />} />
       </>
     )
   );
