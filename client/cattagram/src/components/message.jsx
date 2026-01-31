@@ -1,11 +1,12 @@
 import React from 'react'
 
-const message = () => {
+const Message = ({message}) => {
   return (
     <div>
-      
+      <p>{message.message}</p>
+      <p>{message.time}</p>
     </div>
   )
 }
 
-export default message
+export default Message

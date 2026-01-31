@@ -1,0 +1,22 @@
+{
+  "messages" :[
+    {
+        "id": "1",
+        "user": "Tom",
+        "time": "00:24",
+        "message": "Hi"
+    },
+    {
+        "id": "2",
+        "user": "Scott",
+        "time": "00:26",
+        "message": "Hello"
+    },
+    {
+        "id": "3",
+        "user": "Tom",
+        "time": "01:30",
+        "message": "How are you?"
+    }
+  ]
+}
