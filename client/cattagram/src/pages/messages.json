@@ -3,20 +3,50 @@
     {
         "id": "1",
         "user": "Tom",
+        "currentUser":true,
         "time": "00:24",
-        "message": "Hi"
+        "message": "Hi",
+        "readStatus": true
     },
     {
         "id": "2",
         "user": "Scott",
+        "currentUser":false,
         "time": "00:26",
-        "message": "Hello"
+        "message": "Hello",
+        "readStatus": true
     },
     {
         "id": "3",
         "user": "Tom",
+        "currentUser":true,
         "time": "01:30",
-        "message": "How are you?"
+        "message": "How are you?",
+        "readStatus": true
+    },
+    {
+        "id": "4",
+        "user": "Scott",
+        "currentUser":false,
+        "time": "02:34",
+        "message": "I'm doing fine. Didn't get much sleep lol. Probably not gonna make it to the party and I have to go grocery shopping",
+        "readStatus": true
+      },
+    {
+        "id": "5",
+        "user": "Tom",
+        "currentUser":true,
+        "time": "05:13",
+        "message": "Understandable",
+        "readStatus": true
+    },
+    {
+        "id": "6",
+        "user": "Tom",
+        "currentUser":true,
+        "time": "05:14",
+        "message": "Let me know if circumstances change",
+        "readStatus": false
     }
   ]
 }

@@ -1,15 +1,17 @@
-import {useState, useEffect} from 'react'
 import Message from '../components/message'
 import messages from './messages.json'
 
 const Messages = () => {
   
-  const data = messages;
-  console.log(data.messages);
-
+  const messagesArray = messages;
+  
   return (
-    <div>
-      <Message message={data.messages[0]} />
+    <div className='bg-linear-120 from-[#3EB37C] to-[#D6FFE7] w-screen h-screen'>
+      {
+        messagesArray.messages.map((message) => 
+          <Message key={message.id} message={message} />
+        )
+      }
     </div>
   )
 }
