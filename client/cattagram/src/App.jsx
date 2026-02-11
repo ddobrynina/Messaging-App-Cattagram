@@ -16,7 +16,7 @@ function App() {
       <>
         <Route path='/' element={<Dashboard />}/>
         <Route path='/profile' element={<Profile />} />
-        <Route path='/messages' element={<Messages />} />
+        <Route path='/messages/:id' element={<Messages />} />
       </>
     )
   );

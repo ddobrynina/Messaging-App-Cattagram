@@ -1,21 +1,25 @@
 import MessageHeader from '../components/messageHeader';
-import Message from '../components/message';
-import UserMessage from '../components/userMessage';
-import messages from './messages.json';
+import ReceivedMessage from '../components/receivedMessage';
+import SentMessage from '../components/sentMessage';
+import contacts from '../data/messages.json';
+import { useParams } from 'react-router-dom'
 
 const Messages = () => {
   
-  const messagesArray = messages;
+  const params = useParams();
+  const userId = parseInt(params.id);
+  const contact = contacts.contacts[userId-1].name;
+  const messagesArray = contacts.contacts[userId-1].messages;
 
   return (
     <>
-      <MessageHeader />
+      <MessageHeader contact={contact}/>
       <div className='bg-linear-120 from-[#3EB37C] to-[#D6FFE7] w-screen h-screen'>
       {
-        messagesArray.messages.map((message) => 
+        messagesArray.map((message) => 
           message.currentUser? 
-            <UserMessage key={message.id} message={message} /> :
-            <Message key={message.id} message={message} />
+            <SentMessage key={message.id} message={message} /> :
+            <ReceivedMessage key={message.id} message={message} />
         )
       }
     </div>
