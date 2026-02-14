@@ -1,15 +1,14 @@
 import MessageHeader from '../components/messageHeader';
 import ReceivedMessage from '../components/receivedMessage';
 import SentMessage from '../components/sentMessage';
-import contacts from '../data/messages.json';
 import { useParams } from 'react-router-dom'
 
-const Messages = () => {
+const Messages = ({contacts}) => {
   
   const params = useParams();
   const userId = parseInt(params.id);
-  const contact = contacts.contacts[userId-1].name;
-  const messagesArray = contacts.contacts[userId-1].messages;
+  const contact = contacts[userId-1].name;
+  const messagesArray = contacts[userId-1].messages;
 
   return (
     <>
