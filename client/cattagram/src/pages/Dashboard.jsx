@@ -2,12 +2,12 @@ import Header from '../components/header';
 import ContactList from '../components/contactList';
 
 
-const Dashboard = ({contacts}) => {
+const Dashboard = () => {
   
   return (
     <>
       <Header />
-      <ContactList contacts={contacts}/>
+      <ContactList />
     </>
   )
 }
