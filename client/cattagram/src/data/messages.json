@@ -1,8 +1,8 @@
 {
-  "contacts" : [ 
+  "conversations" : [ 
     {
         "name": "Scott",
-        "userID": "1",
+        "id": "1",
         "messages" :[
         {
             "id": "1",
@@ -56,7 +56,7 @@
     },
     {
         "name": "Gary",
-        "userID": "2",
+        "id": "2",
         "messages":[
             {
                 "id": "1",
@@ -86,7 +86,7 @@
     },
     {
         "name": "Matt",
-        "userID": "3",
+        "id": "3",
         "messages":[
             {
                 "id": "1",
@@ -100,7 +100,7 @@
     },
     {
         "name": "Chris",
-        "userID": "4",
+        "id": "4",
         "messages":[
             {
                 "id": "1",
@@ -114,7 +114,7 @@
     },
     {
         "name": "Dani",
-        "userID": "5",
+        "id": "5",
         "messages":[
             {
                 "id": "1",
@@ -128,7 +128,7 @@
     },
     {
         "name": "Bill",
-        "userID": "6",
+        "id": "6",
         "messages":[
             {
                 "id": "1",
@@ -139,6 +139,262 @@
                 "readStatus": false
             }
         ]
+    },
+    {
+        "name": "Sarah",
+        "id": "7",
+        "messages": [
+            {
+                "id": "1",
+                "user": "Tom",
+                "currentUser": true,
+                "time": "08:12",
+                "message": "Good morning!",
+                "readStatus": true
+            },
+            {
+                "id": "2",
+                "user": "Sarah",
+                "currentUser": false,
+                "time": "08:15",
+                "message": "Morning Tom",
+                "readStatus": true
+            },
+            {
+                "id": "3",
+                "user": "Tom",
+                "currentUser": true,
+                "time": "08:17",
+                "message": "Did you finish the assignment?",
+                "readStatus": true
+            },
+            {
+                "id": "4",
+                "user": "Sarah",
+                "currentUser": false,
+                "time": "08:25",
+                "message": "Almost done, just fixing a few things.",
+                "readStatus": false
+            }
+        
+        ]
+    },
+    {
+        "name": "Mike",
+        "id": "8",
+        "messages": [
+            {
+                "id": "1",
+                "user": "Tom",
+                "currentUser": true,
+                "time": "11:03",
+                "message": "Are you coming to lunch?",
+                "readStatus": true
+            },
+            {
+                "id": "2",
+                "user": "Mike",
+                "currentUser": false,
+                "time": "11:05",
+                "message": "Yeah, give me 10 minutes.",
+                "readStatus": true
+            },
+            {
+                "id": "3",
+                "user": "Tom",
+                "currentUser": true,
+                "time": "11:06",
+                "message": "Cool, I'll grab us a table.",
+                "readStatus": true
+            },
+            {
+                "id": "4",
+                "user": "Mike",
+                "currentUser": false,
+                "time": "11:20",
+                "message": "On my way now.",
+                "readStatus": false
+            }
+        ]
+    },
+    {
+        "name": "Jessica",
+        "id": "9",
+        "messages": [
+            {
+                "id": "1",
+                "user": "Tom",
+                "currentUser": true,
+                "time": "15:40",
+                "message": "Hey, did you see my email?",
+                "readStatus": true
+            },
+            {
+                "id": "2",
+                "user": "Jessica",
+                "currentUser": false,
+                "time": "15:45",
+                "message": "Yes! I'll reply shortly.",
+                "readStatus": true
+            },
+            {
+                "id": "3",
+                "user": "Tom",
+                "currentUser": true,
+                "time": "15:46",
+                "message": "Thanks, appreciate it.",
+                "readStatus": true
+            },
+            {
+                "id": "4",
+                "user": "Jessica",
+                "currentUser": false,
+                "time": "16:02",
+                "message": "Just sent the response.",
+                "readStatus": true
+            }
+        ]
+    },
+    {
+        "name": "David",
+        "id": "10",
+        "messages": [
+            {
+                "id": "1",
+                "user": "Tom",
+                "currentUser": true,
+                "time": "19:10",
+                "message": "Game night still happening?",
+                "readStatus": true
+            },
+            {
+                "id": "2",
+                "user": "David",
+                "currentUser": false,
+                "time": "19:12",
+                "message": "Yep, starts at 7:30.",
+                "readStatus": true
+            },
+            {
+                "id": "3",
+                "user": "Tom",
+                "currentUser": true,
+                "time": "19:13",
+                "message": "Awesome, I'll bring snacks.",
+                "readStatus": true
+            },
+            {
+                "id": "4",
+                "user": "David",
+                "currentUser": false,
+                "time": "19:14",
+                "message": "Perfect",
+                "readStatus": false
+            }
+        ]
     }
-  ]
+  ],
+    "dashboard": [
+        {
+            "name": "Scott",
+            "id": 1,
+            "lastMessage": {
+                "currentUser":true,
+                "time": "05:14",
+                "message": "Let me know if circumstances change",
+                "readStatus": false
+            }
+        },
+        {
+            "name": "Gary",
+            "id": 2,
+            "lastMessage": {
+                "currentUser":true,
+                "time": "11:14",
+                "message": "That's good. Nothing much going on for me either",
+                "readStatus": true
+            }
+        },
+        {
+            "name": "Matt",
+            "id": 3,
+            "lastMessage": {
+                "currentUser":true,
+                "time": "03:24",
+                "message": "How are you doing?",
+                "readStatus": true
+            }
+        },
+        {
+            "name": "Chris",
+            "id": 4,
+            "lastMessage": {
+                "currentUser":true,
+                "time": "03:24",
+                "message": "How are you doing?",
+                "readStatus": true
+            }
+        },
+        {
+            "name": "Dani",
+            "id": 5,
+            "lastMessage": {
+                "currentUser":true,
+                "time": "03:24",
+                "message": "How are you doing?",
+                "readStatus": true
+            }
+        },
+        {
+            "name": "Bill",
+            "id": 6,
+            "lastMessage": {
+                "currentUser":true,
+                "time": "03:24",
+                "message": "How are you doing?",
+                "readStatus": false
+            }
+        },
+        {
+            "name": "Sarah",
+            "id": 7,
+            "lastMessage": {
+                "currentUser": false,
+                "time": "08:25",
+                "message": "Almost done, just fixing a few things.",
+                "readStatus": false
+            }
+        },
+        {
+            "name": "Mike",
+            "id": 8,
+            "lastMessage": {
+                "currentUser": false,
+                "time": "11:20",
+                "message": "On my way now.",
+                "readStatus": false
+            }
+        },
+        {
+            "name": "Jessica",
+            "id": 9,
+            "lastMessage": {
+                "currentUser": false,
+                "time": "16:02",
+                "message": "Just sent the response.",
+                "readStatus": true
+            }
+        },
+        {
+            "name": "David",
+            "id": 10,
+            "lastMessage": {
+                "currentUser": false,
+                "time": "19:14",
+                "message": "Perfect",
+                "readStatus": false
+            }
+        }
+    ]
+   
 }
