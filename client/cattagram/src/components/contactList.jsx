@@ -26,7 +26,7 @@ const ContactList = () => {
     <div>
       { contacts.map((contact) =>
         <Link to={`/messages/${contact.id}`}>
-            <Contact key={contact.id} contact={contact.name} message={contact.lastMessage}/>
+            <Contact key={contact.id} contact={contact.name} avatar={contact.avatar} message={contact.lastMessage}/>
         </Link>
       )
     }

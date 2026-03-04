@@ -3,6 +3,7 @@
     {
         "name": "Scott",
         "id": "1",
+        "avatar":"/src/assets/cat_avatar.jpg", 
         "messages" :[
         {
             "id": "1",
@@ -57,6 +58,7 @@
     {
         "name": "Gary",
         "id": "2",
+        "avatar":"/src/assets/cat_avatar2.png",
         "messages":[
             {
                 "id": "1",
@@ -87,6 +89,7 @@
     {
         "name": "Matt",
         "id": "3",
+        "avatar":"/src/assets/cat_avatar3.png",
         "messages":[
             {
                 "id": "1",
@@ -101,6 +104,7 @@
     {
         "name": "Chris",
         "id": "4",
+        "avatar":"/src/assets/cat_avatar4.png",
         "messages":[
             {
                 "id": "1",
@@ -115,6 +119,7 @@
     {
         "name": "Dani",
         "id": "5",
+        "avatar":"/src/assets/cat_avatar5.png",
         "messages":[
             {
                 "id": "1",
@@ -129,6 +134,7 @@
     {
         "name": "Bill",
         "id": "6",
+        "avatar":"/src/assets/cat_avatar6.png",
         "messages":[
             {
                 "id": "1",
@@ -143,6 +149,7 @@
     {
         "name": "Sarah",
         "id": "7",
+        "avatar":"/src/assets/cat_avatar7.png",
         "messages": [
             {
                 "id": "1",
@@ -182,6 +189,7 @@
     {
         "name": "Mike",
         "id": "8",
+        "avatar":"/src/assets/cat_avatar8.png",
         "messages": [
             {
                 "id": "1",
@@ -220,6 +228,7 @@
     {
         "name": "Jessica",
         "id": "9",
+        "avatar":"/src/assets/cat_avatar9.png",
         "messages": [
             {
                 "id": "1",
@@ -258,6 +267,7 @@
     {
         "name": "David",
         "id": "10",
+        "avatar":"/src/assets/cat_avatar10.png",
         "messages": [
             {
                 "id": "1",
@@ -298,6 +308,7 @@
         {
             "name": "Scott",
             "id": 1,
+            "avatar":"/src/assets/cat_avatar.jpg", 
             "lastMessage": {
                 "currentUser":true,
                 "time": "05:14",
@@ -308,6 +319,7 @@
         {
             "name": "Gary",
             "id": 2,
+            "avatar":"/src/assets/cat_avatar2.png", 
             "lastMessage": {
                 "currentUser":true,
                 "time": "11:14",
@@ -318,6 +330,7 @@
         {
             "name": "Matt",
             "id": 3,
+            "avatar":"/src/assets/cat_avatar3.png", 
             "lastMessage": {
                 "currentUser":true,
                 "time": "03:24",
@@ -328,6 +341,7 @@
         {
             "name": "Chris",
             "id": 4,
+            "avatar":"/src/assets/cat_avatar4.png", 
             "lastMessage": {
                 "currentUser":true,
                 "time": "03:24",
@@ -338,6 +352,7 @@
         {
             "name": "Dani",
             "id": 5,
+            "avatar":"/src/assets/cat_avatar5.png", 
             "lastMessage": {
                 "currentUser":true,
                 "time": "03:24",
@@ -348,6 +363,7 @@
         {
             "name": "Bill",
             "id": 6,
+            "avatar":"/src/assets/cat_avatar6.png", 
             "lastMessage": {
                 "currentUser":true,
                 "time": "03:24",
@@ -358,6 +374,7 @@
         {
             "name": "Sarah",
             "id": 7,
+            "avatar":"/src/assets/cat_avatar7.png", 
             "lastMessage": {
                 "currentUser": false,
                 "time": "08:25",
@@ -368,6 +385,7 @@
         {
             "name": "Mike",
             "id": 8,
+            "avatar":"/src/assets/cat_avatar8.png", 
             "lastMessage": {
                 "currentUser": false,
                 "time": "11:20",
@@ -378,6 +396,7 @@
         {
             "name": "Jessica",
             "id": 9,
+            "avatar":"/src/assets/cat_avatar9.png", 
             "lastMessage": {
                 "currentUser": false,
                 "time": "16:02",
@@ -388,6 +407,7 @@
         {
             "name": "David",
             "id": 10,
+            "avatar":"/src/assets/cat_avatar10.png", 
             "lastMessage": {
                 "currentUser": false,
                 "time": "19:14",
