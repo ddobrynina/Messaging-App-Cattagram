@@ -6,9 +6,9 @@ const SentMessage = ({message}) => {
 
   return (
     <div className='text-wrap m-1'>
-        <div className='flex bg-[#DEFFE7] max-w-sm rounded-xl border ml-8 p-1'>
+        <div className='flex bg-[#DEFFE7] max-w-sm rounded-xl border ml-8 p-2'>
             <div className='flex-4'>{message.message}</div>
-            <div className='flex-1 text-[#5FB350]'>
+            <div className='flex flex-1 text-[#5FB350] justify-end items-center gap-1'>
                 {message.time}
                 {read? <FaCheckDouble /> : <FaCheck /> }
             </div>

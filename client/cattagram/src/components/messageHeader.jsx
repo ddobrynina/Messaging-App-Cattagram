@@ -5,14 +5,14 @@ import {FaArrowLeft, FaPhoneAlt, FaEllipsisV} from 'react-icons/fa';
 
 const MessageHeader = ({contact, avatar}) => {
   return (
-    <div className="flex gap-4 justify-center items-center bg-[#57A8FF] text-white w-screen">
+    <div className="grid grid-cols-5 justify-center items-center bg-[#57A8FF] text-white w-screen position-sticky p-2">
         <NavLink to='/' >
             <FaArrowLeft />
         </NavLink>
-         <div><img className='rounded-[50%] h-15 w-15' src={avatar} alt="" /></div>
+         <div><img className='rounded-[50%] h-12 w-12' src={avatar} alt="" /></div>
         <p>{contact}</p>
         <FaPhoneAlt />
-        <FaEllipsisV />
+        <FaEllipsisV className='justify-end'/>
     </div>
   )
 }

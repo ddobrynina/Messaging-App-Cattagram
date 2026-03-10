@@ -7,17 +7,17 @@ const Contact = ({contact, avatar, message}) => {
   const currentUser = message.currentUser;
   return (
     <>
-        <div className='grid grid-cols-3 border'>
+        <div className='grid grid-cols-3 m-4 items-center'>
             <div className='row-span-2'>
                 <div><img className='rounded-[50%] h-15 w-15' src={avatar} alt="" /></div>
             </div>
             <div><b>{contact}</b></div>
-            <div>
-                {currentUser && (read? <FaCheckDouble /> : <FaCheck />) }
-                {message.time}                            
+            <div className='flex justify-end gap-1 items-center'>
+                <div className='text-[#5FB350]'>{currentUser && (read? <FaCheckDouble /> : <FaCheck />) }</div>
+                <div className='text-gray-400'>{message.time}</div>                           
             </div>
-            <div className='col-span-2'>
-                {message.message}
+            <div className='col-span-2 text-gray-400'>
+                <div className='text-gray-400'>{message.message}</div>
             </div>
         </div>
     </>
