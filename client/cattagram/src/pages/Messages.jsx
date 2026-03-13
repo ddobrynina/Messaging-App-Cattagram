@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import MessageHeader from '../components/messageHeader';
 import ReceivedMessage from '../components/receivedMessage';
 import SentMessage from '../components/sentMessage';
-import { useParams } from 'react-router-dom'
+import { useParams} from 'react-router-dom'
 
 const Messages = () => {
 
@@ -29,7 +29,7 @@ const Messages = () => {
   
   return (
     <>
-      <MessageHeader contact={contacts.name} avatar={contacts.avatar} />
+      <MessageHeader contact={contacts.name} avatar={contacts.avatar} contactId={contacts.id}/>
       <div className='bg-linear-120 from-[#3EB37C] to-[#D6FFE7] w-screen h-screen'>
       {
         contacts.messages.map((message) => 

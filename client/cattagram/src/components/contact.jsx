@@ -9,7 +9,7 @@ const Contact = ({contact, avatar, message}) => {
     <>
         <div className='grid grid-cols-3 m-4 items-center'>
             <div className='row-span-2'>
-                <div><img className='rounded-[50%] h-15 w-15' src={avatar} alt="" /></div>
+                <div className='h-15 w-15'><img className='rounded-[50%]' src={avatar} alt="" /></div>
             </div>
             <div><b>{contact}</b></div>
             <div className='flex justify-end gap-1 items-center'>
