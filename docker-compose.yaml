@@ -12,4 +12,9 @@ services:
       dockerfile: Dockerfile.dev
     ports:
       - "5173:5173"
+    volumes:
+      - ./client/cattagram:/app
+      - client_node_modules:/app/node_modules
 
+volumes:
+  client_node_modules:
