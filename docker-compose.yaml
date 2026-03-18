@@ -1,0 +1,15 @@
+services:
+  api:
+    build:
+      context: ./api
+      dockerfile: Dockerfile.dev
+    ports:
+      - "3000:3000"
+
+  client:
+    build:
+      context: ./client/cattagram
+      dockerfile: Dockerfile.dev
+    ports:
+      - "5173:5173"
+
