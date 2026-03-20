@@ -4,6 +4,8 @@ FROM node:${NODE_VERSION} AS dev
 
 WORKDIR /app
 
+COPY package.json .
+
 RUN npm install
 
 USER node
