@@ -1,18 +1,37 @@
+import React from 'react'
 import { useState, useEffect } from 'react';
 import MessageHeader from '../components/messageHeader';
 import ReceivedMessage from '../components/receivedMessage';
 import SentMessage from '../components/sentMessage';
 import { useParams} from 'react-router-dom'
 
-const Messages = () => {
+type RouteParams = {
+  id: string
+}
+type MessageProps = {
+  id: string,
+  user: string,
+  currentUser:boolean,
+  time: string,
+  message: string,
+  readStatus: boolean
+};
 
-  const params = useParams();
-  const userId = parseInt(params.id);
-  const [contacts, setContacts] = useState({name:"", id: "", messages: [] });
+type ContactProps = {
+  name: string;
+  id: string;
+  avatar: string;
+  messages: MessageProps[];
+};
+
+const Messages = ():React.JSX.Element => {
+
+  const { id } = useParams<RouteParams>();
+  const [contacts, setContacts] = useState<ContactProps>({name:"", id: "",avatar:"", messages: [] });
   
-     useEffect(() => {
-      const fetchContacts = async () => {
-        const apiUrl = `http://localhost:3000/conversations/${userId}`;
+     useEffect(():void => {
+      const fetchContacts = async ():Promise<void> => {
+        const apiUrl = `http://localhost:3000/conversations/${id}`;
         try {
           const res = await fetch(apiUrl);
           const data = await res.json();

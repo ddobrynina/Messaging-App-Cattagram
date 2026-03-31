@@ -1,7 +1,20 @@
+import React from 'react'
 import {FaCheck, FaCheckDouble} from 'react-icons/fa';
-import cat from '../assets/cat_avatar.jpg'
 
-const Contact = ({contact, avatar, message}) => {
+type MessageProps = {
+  message: string;
+  time: string;
+  readStatus: boolean;
+  currentUser: boolean;
+};
+
+type ContactProps = {
+  contact: string;
+  avatar: string;
+  message: MessageProps;
+};
+
+const Contact = ({contact, avatar, message}:ContactProps):React.JSX.Element => {
 
   const read = message.readStatus;
   const currentUser = message.currentUser;

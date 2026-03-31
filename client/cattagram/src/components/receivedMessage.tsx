@@ -1,5 +1,15 @@
+import React from 'react'
 
-const ReceivedMessage = ({message}) => {
+type MessageProps = {
+  message: string;
+  time: string;
+}
+
+type ReceivedMessageProps = {
+  message: MessageProps;
+};
+
+const ReceivedMessage = ({message}:ReceivedMessageProps):React.JSX.Element => {
   
   return (
     <div className='text-wrap m-1'>

@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaBars, FaSearch } from 'react-icons/fa'
 
-const Header = () => {
+const Header = ():React.JSX.Element => {
   return (
     <div className="flex m-0 p-2 items-center bg-[#57A8FF] text-white position-sticky">
       <FaBars className='text-left flex-1' />  

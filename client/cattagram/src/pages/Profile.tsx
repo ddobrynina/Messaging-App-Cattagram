@@ -5,15 +5,23 @@ import {FaArrowLeft, FaEllipsisV, FaRegBell, FaPhoneAlt} from 'react-icons/fa';
 import { BsCameraVideo } from 'react-icons/bs';
 import { TbMessageCircle } from "react-icons/tb";
 
-const Profile = () => {
+type RouteParams = {
+  id: string
+}
 
-  const params = useParams();
-  const userId = parseInt(params.id);
-  const [contacts, setContacts] = useState({name:"", id: ""});
+type ProfileProps = {
+  name: string;
+  avatar: string;
+};
+
+const Profile = ():React.JSX.Element => {
+
+  const { id } = useParams<RouteParams>();
+  const [contacts, setContacts] = useState<ProfileProps>({name:"", avatar: ""});
   
-     useEffect(() => {
-      const fetchContacts = async () => {
-        const apiUrl = `http://localhost:3000/conversations/${userId}`;
+     useEffect(():void => {
+      const fetchContacts = async ():Promise<void> => {
+        const apiUrl = `http://localhost:3000/conversations/${id}`;
         try {
           const res = await fetch(apiUrl);
           const data = await res.json();
@@ -29,7 +37,7 @@ const Profile = () => {
   return (
     <div className='bg-gray-200'>
       <div className='flex justify-between p-2'>
-        <NavLink to={`/messages/${userId}`}>
+        <NavLink to={`/messages/${id}`}>
           <FaArrowLeft />
         </NavLink>
         <FaEllipsisV/>

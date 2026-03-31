@@ -1,6 +1,16 @@
+import React from 'react'
 import {FaCheck, FaCheckDouble} from 'react-icons/fa'
 
-const SentMessage = ({message}) => {
+type MessageProps = {
+  message: string;
+  time: string;
+  readStatus: boolean;
+}
+
+type SentMessageProps = {
+  message: MessageProps;
+};
+const SentMessage = ({message}:SentMessageProps):React.JSX.Element => {
 
   const read = message.readStatus;
 
