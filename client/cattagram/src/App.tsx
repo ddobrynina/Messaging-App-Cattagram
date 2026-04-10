@@ -7,7 +7,7 @@ import {
 import Dashboard from './pages/Dashboard'
 import Profile from './pages/Profile'
 import Messages from './pages/Messages';
-import './App.css'
+
 
 function App() {
 

@@ -12,16 +12,17 @@ type RouteParams = {
 type ProfileProps = {
   name: string;
   avatar: string;
+  bio: string
 };
 
 const Profile = ():React.JSX.Element => {
 
   const { id } = useParams<RouteParams>();
-  const [contacts, setContacts] = useState<ProfileProps>({name:"", avatar: ""});
+  const [contacts, setContacts] = useState<ProfileProps>({name:"", avatar: "", bio:""});
   
      useEffect(():void => {
       const fetchContacts = async ():Promise<void> => {
-        const apiUrl = `http://localhost:3000/conversations/${id}`;
+        const apiUrl = `http://localhost:3000/profiles/${id}`;
         try {
           const res = await fetch(apiUrl);
           const data = await res.json();
@@ -44,6 +45,7 @@ const Profile = ():React.JSX.Element => {
       </div>
       <div className='h-25 w-25 m-auto'><img className='rounded-[50%]' src={contacts.avatar} alt="" /></div>
       <div className='text-[20px] text-center'><b>{contacts.name}</b></div>
+      <div className='text-[15px] text-center'>{contacts.bio}</div>
       <div className='flex justify-center text-[20px] m-2'>
         <button className='bg-white rounded-xl p-2 m-1 w-17'><TbMessageCircle className='m-auto text-[25px]'/> <p className='text-[10px]'>Message</p></button>
         <button className='bg-white rounded-xl p-2 m-1 w-17'><FaRegBell className='m-auto text-[25px]' /><p className='text-[10px]'>Mute</p></button>
