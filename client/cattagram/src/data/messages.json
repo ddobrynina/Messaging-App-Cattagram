@@ -415,6 +415,68 @@
                 "readStatus": false
             }
         }
+    ],
+     "profiles":[
+        {
+            "name": "Scott",
+            "id": 1,
+            "avatar":"/src/assets/cat_avatar.jpg",
+            "bio": "probably thinking about food or gaming" 
+        },
+        {
+            "name": "Gary",
+            "id": 2,
+            "avatar":"/src/assets/cat_avatar2.png",
+            "bio": "chronically online but make it aesthetic"
+        },
+        {
+            "name": "Matt",
+            "id": 3,
+            "avatar":"/src/assets/cat_avatar3.png",
+            "bio": "low battery, high expectations"
+        },
+        {
+            "name": "Chris",
+            "id": 4,
+            "avatar":"/src/assets/cat_avatar4.png",
+            "bio": "vibing quietly in the background"
+        },
+        {
+            "name": "Dani",
+            "id": 5,
+            "avatar":"/src/assets/cat_avatar5.png",
+            "bio": "caffeine & questionable decisions"
+        },
+        {
+            "name": "Bill",
+            "id": 6,
+            "avatar":"/src/assets/cat_avatar6.png",
+            "bio": "typing… deleting… typing again"
+        },
+        {
+            "name": "Sarah",
+            "id": 7,
+            "avatar":"/src/assets/cat_avatar7.png",
+            "bio": "just here for the memes"
+        },
+        {
+            "name": "Mike",
+            "id": 8,
+            "avatar":"/src/assets/cat_avatar8.png",
+            "bio": "introvert with WiFi connection"
+        },
+        {
+            "name": "Jessica",
+            "id": 9,
+            "avatar":"/src/assets/cat_avatar9.png",
+            "bio": "main character in my own playlist"
+        },
+        {
+            "name": "David",
+            "id": 10,
+            "avatar":"/src/assets/cat_avatar10.png",
+            "bio": "chaos but organized chaos"
+        }
     ]
    
 }
