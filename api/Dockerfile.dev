@@ -4,13 +4,14 @@ FROM node:${NODE_VERSION} AS dev
 
 WORKDIR /app
 
-RUN npm install json-server
+COPY package.json .
 
-COPY messages.json .
+RUN npm install
+
 RUN chown -R node:node /app
 
 USER node
 
 EXPOSE 3000
 
-CMD ["npx", "json-server", "messages.json", "-h", "0.0.0.0"]
+CMD ["node", "app.js"]
