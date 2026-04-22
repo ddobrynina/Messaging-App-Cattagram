@@ -19,6 +19,13 @@ services:
       - ./client/cattagram:/app
       - client_node_modules:/app/node_modules
 
+  mongo:
+    image: mongo:8.2.7
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./api/mongo_data:/data/db
+
 volumes:
   client_node_modules:
   api_node_modules:
