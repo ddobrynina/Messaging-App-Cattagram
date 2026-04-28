@@ -20,11 +20,19 @@ services:
       - client_node_modules:/app/node_modules
 
   mongo:
-    image: mongo:8.2.7
+    image: mongo:7.0.31-jammy
     ports:
       - "27017:27017"
     volumes:
       - ./api/mongo_data:/data/db
+      # Seed scripts (mongosh) read JSON from here; host runs: mongosh < scripts/populate_dummy_data.js from api/
+      - ./api:/seed:ro
+      - ./api/scripts/startup:/docker-entrypoint-initdb.d
+    healthcheck:
+      test: ["CMD", "mongosh", "--eval", "db.adminCommand('ping')"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
 
 volumes:
   client_node_modules:
