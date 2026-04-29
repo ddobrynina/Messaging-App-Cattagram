@@ -2,7 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const Dashboard = require("./Dashboard");
 const Profile = require("./Profile");
-const { conversations } = require("./messages.json");
+const Conversation = require("./Conversation");
 const cors = require("cors");
 require('dotenv').config();
 
@@ -11,16 +11,15 @@ app.use(
   cors()
 ); 
 
-mongoose.connect(process.env.MONGO_URI);
+mongoose.connect(process.env.MONGO_URI)
+  .then(() => console.log("Database connected!"))
+  .catch(err => console.log(err));;
 
 
-app.get('/conversations', (req, res) => {
-  return res.json(conversations);
-});
-
-app.get('/conversations/:id', (req, res) => {
+app.get('/conversations/:id', async (req, res) => {
   const index = parseInt(req.params.id);
-  return res.json(conversations[index-1]);
+  const conversation = await getConversation(index);
+  return res.json(conversation);
 });
 
 app.get('/dashboard', async (req, res) => {
@@ -43,6 +42,11 @@ async function getDashboard () {
 async function getProfile (id) {
   const profile = await Profile.findOne().where("id").equals(id);
   return profile;
+}
+
+async function getConversation (id) {
+  const conversation = await Conversation.findOne().where("id").equals(id);
+  return conversation;
 }
 
 

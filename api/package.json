@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "seed": "sh ./scripts/seed.sh"
+    "seed": "bash ./scripts/seed.sh"
   },
   "dependencies": {
     "cors": "^2.8.6",
