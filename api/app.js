@@ -1,6 +1,5 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const Dashboard = require("./Dashboard");
 const Profile = require("./Profile");
 const Conversation = require("./Conversation");
 const cors = require("cors");
@@ -35,7 +34,16 @@ app.get('/profiles/:id', async (req, res) => {
 });
 
 async function getDashboard () {
-  const dashboard = await Dashboard.find();
+  const dashboard = await Conversation.aggregate([
+  {
+    $project: {
+      name: 1,
+      id: 1,
+      avatar: 1,
+      lastMessage: { $last: "$messages"}
+    }
+  }
+]);
   return dashboard;
 }
 

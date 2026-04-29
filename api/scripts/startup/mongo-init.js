@@ -17,11 +17,9 @@ function ensureCollection(name) {
   }
 }
 
-ensureCollection("dashboards");
 ensureCollection("profiles");
 ensureCollection("conversations");
 
-d.dashboards.createIndex({ id: 1 }, { unique: true });
 d.profiles.createIndex({ id: 1 }, { unique: true });
 d.conversations.createIndex({ id: 1 }, { unique: true });
 
