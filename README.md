@@ -19,6 +19,11 @@ Stopping:
 docker compose down
 ```
 
+Stop and remove volumes:
+```bash
+docker compose down -v
+```
+
 Attach to container:
 
 - Get container name/id:
@@ -32,3 +37,9 @@ docker exec -it <container-name-or-id> sh
 ```
 
 **NOTE**: `-i` means interactive, `-t` means pseudo-terminal
+
+## Seed the database:
+
+```bash 
+npm run seed
+```
