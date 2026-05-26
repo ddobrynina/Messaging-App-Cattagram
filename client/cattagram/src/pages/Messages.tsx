@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import MessageHeader from '../components/messageHeader';
 import ReceivedMessage from '../components/receivedMessage';
 import SentMessage from '../components/sentMessage';
+import AddMessage from '../components/addMessage';
 import { useParams} from 'react-router-dom'
 
 type RouteParams = {
@@ -57,6 +58,7 @@ const Messages = ():React.JSX.Element => {
             <ReceivedMessage key={message.id} message={message} />
         )
       }
+      <AddMessage index={(contacts.messages.length+1).toString()}/>
       </div>
     </>
   )

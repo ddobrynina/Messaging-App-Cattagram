@@ -10,6 +10,11 @@ app.use(
   cors()
 ); 
 
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
+
+
 mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log("Database connected!"))
   .catch(err => console.log(err));;
@@ -19,6 +24,27 @@ app.get('/conversations/:id', async (req, res) => {
   const index = parseInt(req.params.id);
   const conversation = await getConversation(index);
   return res.json(conversation);
+});
+
+app.post('/conversations/:id', async (req, res) => {
+  const index = req.params.id;
+  const message = req.body.newMessage;
+  const messageIndex = req.body.index;
+  const conversation = await Conversation.findOneAndUpdate(
+    { id: index },
+    {
+      $push: {
+        messages : {
+          "id": messageIndex,
+          "user": "Tom",
+          "currentUser":true,
+          "time": "00:24",
+          "message": message,
+          "readStatus": false
+        }
+      }
+    }
+  );
 });
 
 app.get('/dashboard', async (req, res) => {
@@ -32,6 +58,8 @@ app.get('/profiles/:id', async (req, res) => {
   const profile = await getProfile(index);
   return res.json(profile);
 });
+
+
 
 async function getDashboard () {
   const dashboard = await Conversation.aggregate([
