@@ -58,7 +58,7 @@ const Messages = ():React.JSX.Element => {
             <ReceivedMessage key={message.id} message={message} />
         )
       }
-      <AddMessage index={(contacts.messages.length+1).toString()}/>
+      <AddMessage />
       </div>
     </>
   )

@@ -8,12 +8,10 @@ type RouteParams = {
   id: string
 }
 
-type indexProp = {
-  index: string
-}
+
  
 
-const AddMessage = ( { index }: indexProp):React.JSX.Element => {
+const AddMessage = ( ):React.JSX.Element => {
 
   const { id } = useParams<RouteParams>();
   const [ newMessage, setNewMessage ] = useState<string>();
@@ -28,7 +26,7 @@ const AddMessage = ( { index }: indexProp):React.JSX.Element => {
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ index: index, newMessage: message }),
+      body: JSON.stringify({ newMessage: message }),
     });    
     
   };

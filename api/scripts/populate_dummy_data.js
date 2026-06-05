@@ -11,11 +11,11 @@ const dbName = "cattagram";
 const d = db.getSiblingDB(dbName);
 
 const messagesPath = path.join("/seed", "messages.json");
-const { conversations, profiles } = JSON.parse(
+const { conversations, profiles, messages } = JSON.parse(
   fs.readFileSync(messagesPath, "utf8")
 );
 
-["conversations", "profiles"].forEach((name) => {
+["conversations", "profiles", "messages"].forEach((name) => {
   d.getCollection(name).deleteMany({});
 });
 
@@ -26,5 +26,12 @@ if (conversations && conversations.length) {
 if (profiles && profiles.length) {
   d.profiles.insertMany(profiles);
 }
+if (messages && messages.length) {
+  d.messages.insertMany(messages);
+}
 
-print(`Seeded cattagram: conversations=${d.conversations.countDocuments()}, profiles=${d.profiles.countDocuments()}`);
+print(`Seeded cattagram: 
+  conversations=${d.conversations.countDocuments()}, 
+  profiles=${d.profiles.countDocuments()},
+  messages=${d.messages.countDocuments()},
+`);
