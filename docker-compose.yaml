@@ -7,7 +7,6 @@ services:
       - "3000:3000"
     volumes:
       - ./api:/app
-      - api_node_modules:/app/node_modules
 
   client:
     build:
@@ -17,7 +16,6 @@ services:
       - "5173:5173"
     volumes:
       - ./client/cattagram:/app
-      - client_node_modules:/app/node_modules
 
   mongo:
     image: mongo:7.0.31-jammy
@@ -33,7 +31,3 @@ services:
       interval: 10s
       timeout: 5s
       retries: 5
-
-volumes:
-  client_node_modules:
-  api_node_modules:
