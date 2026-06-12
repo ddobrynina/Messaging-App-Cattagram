@@ -1,11 +1,13 @@
-const express = require("express");
-const mongoose = require("mongoose");
-const Profile = require("./Profile");
-const Conversation = require("./Conversation");
-const Message = require("./Message");
-const { randomUUID } = require('crypto');
-const cors = require("cors");
-require('dotenv').config();
+import 'dotenv/config';
+import express from 'express';
+import mongoose from 'mongoose';
+import Profile from "./Profile.js";
+import Conversation from "./Conversation.js";
+import Message from "./Message.js";
+import { randomUUID } from 'crypto';
+import cors from 'cors';
+
+
 
 const app = express();
 app.use(
@@ -15,15 +17,18 @@ app.use(
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+const mongoUri = process.env.MONGO_URI;
+if (!mongoUri) {
+  throw new Error("Missing MONGO_URI environment variable");
+} 
 
-
-mongoose.connect(process.env.MONGO_URI)
+mongoose.connect(mongoUri)
   .then(() => console.log("Database connected!"))
   .catch(err => console.log(err));;
 
 
 app.get('/conversations/:id', async (req, res) => {
-  const index = parseInt(req.params.id);
+  const index = req.params.id;
   const conversation = await getConversation(index);
   return res.json(conversation);
 });
@@ -61,7 +66,7 @@ app.get('/dashboard', async (req, res) => {
 
 
 app.get('/profiles/:id', async (req, res) => {
-  const index = parseInt(req.params.id);
+  const index = req.params.id;
   const profile = await getProfile(index);
   return res.json(profile);
 });
@@ -92,12 +97,12 @@ async function getDashboard () {
   return dashboard;
 }
 
-async function getProfile (id) {
+async function getProfile (id:string) {
   const profile = await Profile.findOne({ id: id });
   return profile;
 }
 
-async function getConversation (id) {
+async function getConversation (id:string) {
   const conversation = await Conversation.findOne({ id: id });
   const messages = await Message.find({ conversationid: id });
   return {
@@ -119,4 +124,4 @@ app.listen(PORT, (error) => {
 
 
 
-module.exports = app;
+export default app;

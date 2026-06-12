@@ -1,12 +1,22 @@
 {
+  "type": "module",
   "scripts": {
+    "dev": "tsx watch src/app.ts",
     "seed": "bash ./scripts/seed.sh"
   },
   "dependencies": {
+    "@types/express": "^5.0.6",
     "cors": "^2.8.6",
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
     "mongodb": "^7.1.1",
     "mongoose": "^9.4.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/node": "^25.9.3",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.22.4",
+    "typescript": "^6.0.3"
   }
 }
