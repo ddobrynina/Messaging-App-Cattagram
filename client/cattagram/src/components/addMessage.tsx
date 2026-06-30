@@ -35,8 +35,10 @@ const AddMessage = ( ):React.JSX.Element => {
   return (
     <div>
         <form onSubmit={handleSubmit}>
-            <textarea name="newMessage" id="newMessage" className='rounded-xl border bg-white' value={newMessage} onChange={event => setNewMessage(event.target.value)}></textarea>
-            <button type="submit"><RiSendPlaneFill /></button>
+          <div className='rounded-full border bg-white text-[15px] w-[350px] m-2 p-1 flex relative justify-center items-center'>
+            <input name="newMessage" className="flex-3 border-none outline-hidden m-2" id="newMessage" type="text" value={newMessage} onChange={event => setNewMessage(event.target.value)}/>
+            <button type="submit" className="text-[30px] flex-1"><RiSendPlaneFill className="bg-[#57A8FF] text-white rounded-[50%] p-1 m-1 ms-15" /></button>
+          </div>
         </form>
     </div>
   )

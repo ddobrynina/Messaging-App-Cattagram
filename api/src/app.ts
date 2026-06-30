@@ -44,7 +44,7 @@ app.post('/conversations/:id', async (req, res) => {
       "conversationid": index,
       "user": "Tom",
       "currentUser":true,
-      "time": "00:24",
+      "time": new Date().toISOString(),
       "message": newMessage,
       "readStatus": false
     }

@@ -129,7 +129,7 @@
             "conversationid": "1",
             "user": "Tom",
             "currentUser":true,
-            "time": "00:24",
+            "time": "2026-01-10T00:24:00.000Z",
             "message": "Hi",
             "readStatus": true
         },
@@ -138,7 +138,7 @@
             "conversationid": "1",
             "user": "Scott",
             "currentUser":false,
-            "time": "00:26",
+            "time": "2026-01-10T00:26:00.000Z",
             "message": "Hello",
             "readStatus": true
         },
@@ -147,7 +147,7 @@
             "conversationid": "1",
             "user": "Tom",
             "currentUser":true,
-            "time": "01:30",
+            "time": "2026-01-10T01:30:00.000Z",
             "message": "How are you?",
             "readStatus": true
         },
@@ -156,7 +156,7 @@
             "conversationid": "1",
             "user": "Scott",
             "currentUser":false,
-            "time": "02:34",
+            "time": "2026-01-10T02:24:00.000Z",
             "message": "I'm doing fine. Didn't get much sleep lol. Probably not gonna make it to the party and I have to go grocery shopping",
             "readStatus": true
         },
@@ -165,7 +165,7 @@
             "conversationid": "1",
             "user": "Tom",
             "currentUser":true,
-            "time": "05:13",
+            "time": "2026-01-10T05:13:00.000Z",
             "message": "Understandable",
             "readStatus": true
         },
@@ -174,7 +174,7 @@
             "conversationid": "1",
             "user": "Tom",
             "currentUser":true,
-            "time": "05:14",
+            "time": "2026-01-10T05:14:00.000Z",
             "message": "Let me know if circumstances change",
             "readStatus": false
         },
@@ -183,7 +183,7 @@
             "conversationid": "2",
             "user": "Tom",
             "currentUser":true,
-            "time": "03:24",
+            "time": "2026-01-20T03:24:00.000Z",
             "message": "How are you doing?",
             "readStatus": true
         },
@@ -192,7 +192,7 @@
             "conversationid": "2",
             "user": "Gary",
             "currentUser":false,
-            "time": "04:15",
+            "time": "2026-01-20T04:15:00.000Z",
             "message": "I'm doing well. Nothing much going on. How about you?",
             "readStatus": true
         },
@@ -201,7 +201,7 @@
             "conversationid": "2",
             "user": "Tom",
             "currentUser":true,
-            "time": "11:14",
+            "time": "2026-01-20T11:14:00.000Z",
             "message": "That's good. Nothing much going on for me either",
             "readStatus": true
         },
@@ -210,7 +210,7 @@
             "conversationid": "3",
             "user": "Tom",
             "currentUser":true,
-            "time": "03:24",
+            "time": "2026-02-03T03:24:00.000Z",
             "message": "How are you doing?",
             "readStatus": true
         },
@@ -219,7 +219,7 @@
             "conversationid": "4",
             "user": "Tom",
             "currentUser":true,
-            "time": "03:24",
+            "time": "2026-02-04T03:24:00.000Z",
             "message": "How are you doing?",
             "readStatus": true
         },
@@ -228,7 +228,7 @@
             "conversationid": "5",
             "user": "Tom",
             "currentUser":true,
-            "time": "03:24",
+            "time": "2026-02-05T03:24:00.000Z",
             "message": "How are you doing?",
             "readStatus": true
         },
@@ -237,7 +237,7 @@
             "conversationid": "6",
             "user": "Tom",
             "currentUser":true,
-            "time": "03:24",
+            "time": "2026-02-06T03:24:00.000Z",
             "message": "How are you doing?",
             "readStatus": false
         },
@@ -246,7 +246,7 @@
             "conversationid": "7",
             "user": "Tom",
             "currentUser": true,
-            "time": "08:12",
+            "time": "2026-03-12T08:12:00.000Z",
             "message": "Good morning!",
             "readStatus": true
         },
@@ -255,7 +255,7 @@
             "conversationid": "7",
             "user": "Sarah",
             "currentUser": false,
-            "time": "08:15",
+            "time": "2026-03-12T08:15:00.000Z",
             "message": "Morning Tom",
             "readStatus": true
         },
@@ -264,7 +264,7 @@
             "conversationid": "7",
             "user": "Tom",
             "currentUser": true,
-            "time": "08:17",
+            "time": "2026-03-12T08:17:00.000Z",
             "message": "Did you finish the assignment?",
             "readStatus": true
         },
@@ -273,7 +273,7 @@
             "conversationid": "7",
             "user": "Sarah",
             "currentUser": false,
-            "time": "08:25",
+            "time": "2026-03-12T08:25:00.000Z",
             "message": "Almost done, just fixing a few things.",
             "readStatus": false
         },
@@ -282,7 +282,7 @@
             "conversationid": "8",
             "user": "Tom",
             "currentUser": true,
-            "time": "11:03",
+            "time": "2026-03-24T11:03:00.000Z",
             "message": "Are you coming to lunch?",
             "readStatus": true
         },
@@ -291,7 +291,7 @@
             "conversationid": "8",
             "user": "Mike",
             "currentUser": false,
-            "time": "11:05",
+            "time": "2026-03-24T11:05:00.000Z",
             "message": "Yeah, give me 10 minutes.",
             "readStatus": true
         },
@@ -300,7 +300,7 @@
             "conversationid": "8",
             "user": "Tom",
             "currentUser": true,
-            "time": "11:06",
+            "time": "2026-03-24T11:06:00.000Z",
             "message": "Cool, I'll grab us a table.",
             "readStatus": true
         },
@@ -309,7 +309,7 @@
             "conversationid": "8",
             "user": "Mike",
             "currentUser": false,
-            "time": "11:20",
+            "time": "2026-03-24T11:20:00.000Z",
             "message": "On my way now.",
             "readStatus": false
         },
@@ -318,7 +318,7 @@
             "conversationid": "9",
             "user": "Tom",
             "currentUser": true,
-            "time": "15:40",
+            "time": "2026-04-23T15:40:00.000Z",
             "message": "Hey, did you see my email?",
             "readStatus": true
         },
@@ -327,7 +327,7 @@
             "conversationid": "9",
             "user": "Jessica",
             "currentUser": false,
-            "time": "15:45",
+            "time": "2026-04-23T15:45:00.000Z",
             "message": "Yes! I'll reply shortly.",
             "readStatus": true
         },
@@ -336,7 +336,7 @@
             "conversationid": "9",
             "user": "Tom",
             "currentUser": true,
-            "time": "15:46",
+            "time": "2026-04-23T15:46:00.000Z",
             "message": "Thanks, appreciate it.",
             "readStatus": true
         },
@@ -345,7 +345,7 @@
             "conversationid": "9",
             "user": "Jessica",
             "currentUser": false,
-            "time": "16:02",
+            "time": "2026-04-23T16:02:00.000Z",
             "message": "Just sent the response.",
             "readStatus": true
         },
@@ -354,7 +354,7 @@
             "conversationid": "10",
             "user": "Tom",
             "currentUser": true,
-            "time": "19:10",
+            "time": "2026-05-30T19:10:00.000Z",
             "message": "Game night still happening?",
             "readStatus": true
         },
@@ -363,7 +363,7 @@
             "conversationid": "10",
             "user": "David",
             "currentUser": false,
-            "time": "19:12",
+            "time": "2026-05-30T19:12:00.000Z",
             "message": "Yep, starts at 7:30.",
             "readStatus": true
         },
@@ -372,7 +372,7 @@
             "conversationid": "10",
             "user": "Tom",
             "currentUser": true,
-            "time": "19:13",
+            "time": "2026-05-30T19:13:00.000Z",
             "message": "Awesome, I'll bring snacks.",
             "readStatus": true
         },
@@ -381,7 +381,7 @@
             "conversationid": "10",
             "user": "David",
             "currentUser": false,
-            "time": "19:14",
+            "time": "2026-05-30T19:14:00.000Z",
             "message": "Perfect",
             "readStatus": false
         }

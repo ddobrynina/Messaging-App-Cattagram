@@ -18,6 +18,8 @@ const Contact = ({contact, avatar, message}:ContactProps):React.JSX.Element => {
 
   const read = message.readStatus;
   const currentUser = message.currentUser;
+  const time = new Date(message.time).toLocaleTimeString();
+
   return (
     <>
         <div className='grid grid-cols-3 m-4 items-center'>
@@ -27,7 +29,7 @@ const Contact = ({contact, avatar, message}:ContactProps):React.JSX.Element => {
             <div><b>{contact}</b></div>
             <div className='flex justify-end gap-1 items-center'>
                 <div className='text-[#5FB350]'>{currentUser && (read? <FaCheckDouble /> : <FaCheck />) }</div>
-                <div className='text-gray-400'>{message.time}</div>                           
+                <div className='text-gray-400'>{time}</div>                           
             </div>
             <div className='col-span-2 text-gray-400'>
                 <div className='text-gray-400'>{message.message}</div>
