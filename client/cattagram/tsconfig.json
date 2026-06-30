@@ -8,9 +8,8 @@
     "checkJs": false,
     "jsx": "react-jsx",
     "strict": true,
-    "baseUrl": ".",
     "paths": {
-      "@/*": ["*"]
+      "@/*": ["./*"]
     },
     "noEmit": true,
     "moduleResolution": "bundler"
